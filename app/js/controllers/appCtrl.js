@@ -31,7 +31,7 @@ ChatApp.controller('appCtrl', ['$scope', '$rootScope', '$http', '$state', '$sess
         $http({
             method: 'GET',
             url: 'https://github.com/jonls/php-git-server/blob/master/index.php?function=testing',
-            url: CONFIG.rootUrl + 'function=getUserList',
+            //url: CONFIG.rootUrl + 'function=getUserList',
             headers: {
                 'Content-Type': 'application/json'
             }
