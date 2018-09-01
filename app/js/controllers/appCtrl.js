@@ -30,6 +30,7 @@ ChatApp.controller('appCtrl', ['$scope', '$rootScope', '$http', '$state', '$sess
     $scope.getUsers = function () {
         $http({
             method: 'GET',
+            url: 'https://github.com/jonls/php-git-server/blob/master/index.php?function=testing',
             url: CONFIG.rootUrl + 'function=getUserList',
             headers: {
                 'Content-Type': 'application/json'
@@ -38,7 +39,7 @@ ChatApp.controller('appCtrl', ['$scope', '$rootScope', '$http', '$state', '$sess
 
         })
     }
-    //$scope.getUsers();
+    $scope.getUsers();
 
     /*Registration*/
     $scope.submitForm = function () {
