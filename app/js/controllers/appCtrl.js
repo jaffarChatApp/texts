@@ -30,7 +30,8 @@ ChatApp.controller('appCtrl', ['$scope', '$rootScope', '$http', '$state', '$sess
     $scope.getUsers = function () {
         $http({
             method: 'GET',
-            url: 'https://github.com/jaffarChatApp/phpGitServer/blob/master/index.php?function=testing',
+            //url: 'https://github.com/jaffarChatApp/phpGitServer/blob/master/index.php?function=testing',
+            url: 'https://gitlab.com/jaffargit/chatApp/blob/master/Server/user.php',
             //url: CONFIG.rootUrl + 'function=getUserList',
             headers: {
                 'Content-Type': 'application/json'
